@@ -1,0 +1,301 @@
+nav {
+  position: relative;
+}
+
+section {
+  position: relative;
+  padding: 4em 0;
+  margin-bottom: 3em !important;
+}
+
+header h1 {
+  position: relative;
+  color: $font-highlight-color;
+  margin: 0.2em 0 !important;
+  font-size: 2.5em;
+
+  @media (max-width: 750px) {
+    font-size: 3em;
+  }
+}
+
+.off-canvas-menu-btn {
+  background: nth($color-palette, 5);
+  width: 4em;
+  height: 4em;
+  border-radius: 50%;
+  position: fixed;
+  top: 1em;
+  right: 1em;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: $infinity - 9;
+
+  @media (max-width: 700px) {
+    display: flex;
+  }
+}
+
+.icon {
+  position: relative;
+
+  &, &::before, &::after {
+    transition: all 0.4s ease;
+  }
+
+  &.menu {
+    width: 2.5em;
+    height: 0.2em;
+    background-color: currentColor;
+
+    &::before, &::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      width: 100%;
+      background-color: currentColor;
+    }
+
+    &::before {
+      top: -0.65em;
+      height: 0.25em;
+    }
+
+    &::after {
+      top: 0.6em;
+      height: 0.25em;
+    }
+  }
+
+  &.close {
+    width: 3em;
+
+    &::before, &::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      width: 100%;
+      height: 0.2em;
+      background-color: currentColor;
+    }
+
+    &::before {
+      transform: rotate(-45deg);
+    }
+
+    &::after {
+      transform: rotate(45deg);
+    }
+  }
+}
+
+.nav__search {
+  font-size: 1.5em;
+  position: relative;
+  flex: 1.5;
+
+  @media (max-width: 700px) {
+    margin-top: 4em;
+  }
+
+  &-input {
+    background: transparent;
+    outline: none;
+    border: none;
+    border-bottom: 2px solid $font-generic-color;
+    color: transparent;
+    width: 85%;
+    transition: all 0.3s ease-in-out;
+
+    &:focus {
+      color: inherit;
+      border-bottom-color: $font-highlight-color;
+
+      + .nav__search-label {
+        font-size: 0.65em;
+        top: -1.5em;
+        color: $font-highlight-color;
+      }
+    }
+  }
+
+  &-label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: all 0.3s ease-in-out;
+  }
+
+  &-button {
+    width: 10%;
+    font-size: 0.9em;
+    background: transparent;
+    border: none;
+    padding: 0;
+    margin: 0;
+    color: inherit;
+
+    &:hover {
+      color: $font-highlight-color;
+    }
+
+    &:focus {
+      outline: none;
+      color: $font-highlight-color;
+    }
+  }
+}
+
+.about {
+  padding: 0 2em;
+  display: flex;
+  align-items: center;
+
+  @media (max-width: 550px) {
+    display: block;
+  }
+
+  &__img-container {
+    margin-right: 1em;
+    flex: 1;
+
+    @media (max-width: 550px) {
+      margin-right: 0;
+      text-align: center;
+    }
+  }
+
+  &__img {
+    border-radius: 50%;
+    border: 0.3em solid $font-highlight-color;
+    width: 10em;
+    height: auto;
+
+    @media (min-width: 450px) and (max-width: 550px) {
+      width: 12em;
+    }
+  }
+
+  &__text {
+    flex: 6;
+    font-size: 1.5em;
+    font-weight: 300;
+
+    @media (min-width: 450px) and (max-width: 550px) {
+      font-size: 1.8em;
+    }
+  }
+}
+
+blockquote {
+  text-align: center;
+  font-size: 1.2em;
+  font-style: italic;
+  color: $font-highlight-color;
+  font-weight: 900;
+  position: relative;
+
+  .fa[class*="quote"] {
+    font-size: 0.6em;
+    vertical-align: top;
+  }
+
+  @media (min-width: 450px) and (max-width: 550px) {
+    font-size: 1.4em;
+  }
+}
+
+a.regular-link {
+  color: $font-highlight-color;
+  margin-right: 1em;
+
+  &:hover, &:focus {
+    color: $font-generic-color;
+  }
+
+  &::after {
+    position: absolute;
+    left: 0;
+    bottom: -0.2em;
+    content: '';
+    width: 100%;
+    height: 2px;
+    background: inherit;
+    transform: scale(0);
+    transition: transform 0.3s ease-in-out;
+  }
+
+  &:hover::after, &:focus::after {
+    background: $font-highlight-color;
+    transform: scale(1);
+  }
+
+  &--no-margin {
+    margin: 0;
+  }
+}
+
+.tabs__pane:nth-of-type(n+10) {
+  align-self: flex-end;
+}
+
+.fa-github, .fa-external-link-square {
+  font-size: 1.2em;
+  margin-right: 0.2em;
+  vertical-align: baseline;
+  color: $github-brand-color;
+}
+
+.image--height-override {
+  height: 30em;
+  width: auto;
+}
+
+.carousel-arrow-bg-override {
+  mix-blend-mode: difference;
+}
+
+footer {
+  text-align: center;
+  background: nth($color-palette, 1);
+  padding: 1em;
+}
+
+.screen-resolution-display {
+  margin: 0.5em;
+  font-size: 0.7em;
+  text-align: center;
+
+  &.screen-width-4 {
+    display: none;
+
+    @media (min-width: 1024px) {
+      display: block;
+    }
+  }
+
+  &.screen-width-3 {
+    display: none;
+
+    @media (min-width: 600px) and (max-width: 1023px) {
+      display: block;
+    }
+  }
+
+  &.screen-width-2 {
+    display: none;
+
+    @media (min-width: 360px) and (max-width: 599px) {
+      display: block;
+    }
+  }
+
+  &.screen-width-1 {
+    display: none;
+
+    @media (max-width: 360px) {
+      display: block;
+    }
+  }
+}
