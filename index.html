@@ -3,9 +3,21 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Aashish Nagpal</title>
+  <title>Shashank Kumar</title>
   <link rel="stylesheet" href="css/eui-grid.min.css"/>
-  <link rel="stylesheet" href="css/portfolio.min.css"/>
+  <link rel="stylesheet" href="css/portfolio.css"/>
+  <link rel="stylesheet" href="css/agency.css"/>
+  <link href="css/project.css"/>
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom fonts for this template -->
+  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+  <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+
   <script src="js/loader.js"></script>
 </head>
 <body>
@@ -22,7 +34,7 @@
 <header>
   <div class="eui-grid__container">
     <div class="eui-grid__row">
-      <h1 class="eui-grid__column eui-grid__col-size-12-of-12">Aashish Nagpal</h1>
+      <h1 class="eui-grid__column eui-grid__col-size-12-of-12">Shashank Kumar</h1>
     </div>
     <div class="off-canvas-menu-btn">
       <div class="menu icon"></div>
@@ -30,21 +42,24 @@
     <nav data-scrollspy>
       <ul class="eui-grid__row nav">
         <li class="eui-grid__column eui-grid__col-size-2-of-12 nav__item nav__item--active">
-          <a class="nav__link" href="#about">about</a>
+          <a style= "text-decoration: none;" class="nav__link" href="#about">about</a>
         </li>
         <li class="eui-grid__column eui-grid__col-size-2-of-12 nav__item">
-          <a class="nav__link" href="#projects">projects</a>
+          <a style= "text-decoration: none;" class="nav__link" href="#projects">projects</a>
         </li>
         <li class="eui-grid__column eui-grid__col-size-2-of-12 nav__item">
-          <a class="nav__link" href="#skills">skills</a>
+          <a style= "text-decoration: none;" class="nav__link" href="#timeline">timeline</a>
+        </li>
+        <li class="eui-grid__column eui-grid__col-size-2-of-12 nav__item">
+          <a style= "text-decoration: none;" class="nav__link" href="#skills">skills</a>
         </li>
         <!--<li class="eui-grid__column eui-grid__col-size-2-of-12 nav__item">-->
           <!--<a class="nav__link" href="#articles">articles</a>-->
         <!--</li>-->
         <li class="eui-grid__column eui-grid__col-size-2-of-12 nav__item">
-          <a class="nav__link" href="#contact">contact</a>
+          <a style= "text-decoration: none;" class="nav__link" href="#contact">contact</a>
         </li>
-        <li id="search" class="eui-grid__column eui-grid__col-size-3-of-12 eui-grid__offset-by-1-col nav__search">
+        <li id="search" class="eui-grid__column eui-grid__col-size-2-of-12 nav__search">
           <input type="text" id="search-input" class="nav__search-input">
           <label for="search-input" class="nav__search-label">search</label>
           <button id="btn-search"
@@ -71,10 +86,10 @@
   <div class="eui-grid__row">
     <div class="eui-grid__column eui-grid__col-size-12-of-12 about">
       <div class="about__img-container">
-        <img class="about__img" src="images/profile.jpg">
+        <img class="about__img" src="images/profile.jpeg">
       </div>
       <div class="about__text">
-        <p>Hi! My name's Aashish. I am an inspired individual and I love to learn exciting new
+        <p>Hi! My name's Shashank. I am an inspired individual and I love to learn exciting new
           skills, solve problems and apply my programming knowledge to build something beautiful. </p>
         <p>I am currently learning advanced JavaScript and I aspire to become a world-class Fullstack JavaScript
           Developer. </p>
@@ -89,925 +104,176 @@
       <p></p>
     </div>
   </div>
-  <div class="eui-grid__row">
-    <div class="eui-grid__column eui-grid__col-size-12-of-12">
-      <div class="tabs tabs--vertical">
-        <ul class="tabs__tab-container">
-          <!--<li class="tabs__tab">UI Framework</li>-->
-          <!--<li class="tabs__tab">Pinnacle Project Thesis Page</li>-->
-          <!--<li class="tabs__tab">Persona 2</li>-->
-          <li class="tabs__tab tabs__tab--active">Persona 1</li>
-          <!--<li class="tabs__tab">Carousel</li>-->
-          <!--<li class="tabs__tab">Modals</li>-->
-          <li class="tabs__tab">Tooltips</li>
-          <li class="tabs__tab">Business Card</li>
-          <li class="tabs__tab">Accordion</li>
-          <li class="tabs__tab">Image Gallery</li>
-          <li class="tabs__tab">Tabs</li>
-          <li class="tabs__tab">Blog UI Design</li>
-          <li class="tabs__tab">Products and Shopping Cart</li>
-          <li class="tabs__tab">Multiple Forms</li>
-          <li class="tabs__tab">Calculator</li>
-          <li class="tabs__tab">Profile Sidebar</li>
-          <li class="tabs__tab">Button Web Component</li>
-        </ul>
-        <div class="tabs__pane-container">
-
-          <!-- UI Framework -->
-          <!--<div class="tabs__pane">-->
-          <!--<h2>UI Framework</h2>-->
-          <!--<div class="c-carousel__wrapper">-->
-          <!--<div class="c-carousel c-carousel&#45;&#45;fader-type" data-bullet-nav>-->
-          <!--&lt;!&ndash; bullet navigation &ndash;&gt;-->
-          <!--<ol class="c-carousel__bullet-nav">-->
-          <!--<li class="c-carousel__bullet-nav-item c-carousel__bullet-nav-item&#45;&#45;is-active"-->
-          <!--data-slide-index="0"></li>-->
-          <!--<li class="c-carousel__bullet-nav-item" data-slide-index="1"></li>-->
-          <!--<li class="c-carousel__bullet-nav-item" data-slide-index="2"></li>-->
-          <!--</ol>-->
-          <!--&lt;!&ndash; carousel slide container &ndash;&gt;-->
-          <!--<div class="c-carousel__slides-container">-->
-          <!--&lt;!&ndash; carousel slide &ndash;&gt;-->
-          <!--<div class="c-carousel__slide c-carousel__slide&#45;&#45;is-selected">-->
-          <!--<img class="c-carousel__image" src="images/projects/persona-1/persona-1.png" alt="Persona (Type 1)">-->
-          <!--</div>-->
-          <!--&lt;!&ndash; carousel slide &ndash;&gt;-->
-          <!--<div class="c-carousel__slide">-->
-          <!--<img class="c-carousel__image" src="images/projects/persona-1/persona-1-hovered.png"-->
-          <!--alt="Persona (Type 1) when hovered over">-->
-          <!--</div>-->
-          <!--&lt;!&ndash; carousel slide &ndash;&gt;-->
-          <!--<div class="c-carousel__slide">-->
-          <!--<img class="c-carousel__image" src="images/projects/persona-1/persona-1.gif"-->
-          <!--alt="Persona (Type 1) GIF">-->
-          <!--</div>-->
-          <!--&lt;!&ndash; carousel arrow navigation &ndash;&gt;-->
-          <!--<a href="" class="c-carousel__arrow-nav c-carousel__arrow-nav&#45;&#45;left" data-slide-nav="prev">-->
-          <!--<i class="fa fa-chevron-circle-left fa-2x"></i>-->
-          <!--</a>-->
-          <!--<a href="" class="c-carousel__arrow-nav c-carousel__arrow-nav&#45;&#45;right" data-slide-nav="next">-->
-          <!--<i class="fa fa-chevron-circle-right fa-2x"></i>-->
-          <!--</a>-->
-          <!--</div>-->
-          <!--</div>-->
-          <!--</div>-->
-          <!--<h4>Technologies: HTML5, CSS3 and Vanilla JavaScript</h4>-->
-          <!--<p>A simple UI Framework built during a Hackathon with a team of awesome students at Bov Academy.</p>-->
-          <!--<div>-->
-          <!--<a href="" class="regular-link">-->
-          <!--<i class="fa fa-external-link-square" aria-hidden="true"></i> View Live Demo-->
-          <!--</a>-->
-          <!--<a href="" class="regular-link">-->
-          <!--<i class="fa fa-github" aria-hidden="true"></i> View Source on GitHub-->
-          <!--</a>-->
-          <!--</div>-->
-          <!--</div>-->
-
-          <!-- Pinnacle Project Thesis -->
-          <!--<div class="tabs__pane">-->
-          <!--<h2>Pinnacle Project Thesis</h2>-->
-          <!--<div class="c-carousel__wrapper">-->
-          <!--<div class="c-carousel c-carousel&#45;&#45;fader-type" data-bullet-nav>-->
-          <!--&lt;!&ndash; bullet navigation &ndash;&gt;-->
-          <!--<ol class="c-carousel__bullet-nav">-->
-          <!--<li class="c-carousel__bullet-nav-item c-carousel__bullet-nav-item&#45;&#45;is-active"-->
-          <!--data-slide-index="0"></li>-->
-          <!--<li class="c-carousel__bullet-nav-item" data-slide-index="1"></li>-->
-          <!--<li class="c-carousel__bullet-nav-item" data-slide-index="2"></li>-->
-          <!--</ol>-->
-          <!--&lt;!&ndash; carousel slide container &ndash;&gt;-->
-          <!--<div class="c-carousel__slides-container">-->
-          <!--&lt;!&ndash; carousel slide &ndash;&gt;-->
-          <!--<div class="c-carousel__slide c-carousel__slide&#45;&#45;is-selected">-->
-          <!--<img class="c-carousel__image" src="images/projects/persona-1/persona-1.png" alt="Persona (Type 1)">-->
-          <!--</div>-->
-          <!--&lt;!&ndash; carousel slide &ndash;&gt;-->
-          <!--<div class="c-carousel__slide">-->
-          <!--<img class="c-carousel__image" src="images/projects/persona-1/persona-1-hovered.png"-->
-          <!--alt="Persona (Type 1) when hovered over">-->
-          <!--</div>-->
-          <!--&lt;!&ndash; carousel slide &ndash;&gt;-->
-          <!--<div class="c-carousel__slide">-->
-          <!--<img class="c-carousel__image" src="images/projects/persona-1/persona-1.gif"-->
-          <!--alt="Persona (Type 1) GIF">-->
-          <!--</div>-->
-          <!--&lt;!&ndash; carousel arrow navigation &ndash;&gt;-->
-          <!--<a href="" class="c-carousel__arrow-nav c-carousel__arrow-nav&#45;&#45;left" data-slide-nav="prev">-->
-          <!--<i class="fa fa-chevron-circle-left fa-2x"></i>-->
-          <!--</a>-->
-          <!--<a href="" class="c-carousel__arrow-nav c-carousel__arrow-nav&#45;&#45;right" data-slide-nav="next">-->
-          <!--<i class="fa fa-chevron-circle-right fa-2x"></i>-->
-          <!--</a>-->
-          <!--</div>-->
-          <!--</div>-->
-          <!--</div>-->
-          <!--<h4>Technologies: HTML5, CSS3, Vanilla JavaScript, Handlebars.js and Gulp</h4>-->
-          <!--<p>Developed this project as part of Student Website at Bov Academy</p>-->
-          <!--<div>-->
-          <!--<a href="" class="regular-link">-->
-          <!--<i class="fa fa-external-link-square" aria-hidden="true"></i> View Live Demo-->
-          <!--</a>-->
-          <!--<a href="" class="regular-link">-->
-          <!--<i class="fa fa-github" aria-hidden="true"></i> View Source on GitHub-->
-          <!--</a>-->
-          <!--</div>-->
-          <!--</div>-->
-
-          <!-- Persona 2 (Author Card Layout) -->
-          <!--<div class="tabs__pane">-->
-          <!--<h2>Persona 2 - New Author Card Layout</h2>-->
-          <!--<div class="c-carousel__wrapper">-->
-          <!--<div class="c-carousel c-carousel&#45;&#45;fader-type" data-bullet-nav>-->
-          <!--&lt;!&ndash; bullet navigation &ndash;&gt;-->
-          <!--<ol class="c-carousel__bullet-nav">-->
-          <!--<li class="c-carousel__bullet-nav-item c-carousel__bullet-nav-item&#45;&#45;is-active"-->
-          <!--data-slide-index="0"></li>-->
-          <!--<li class="c-carousel__bullet-nav-item" data-slide-index="1"></li>-->
-          <!--<li class="c-carousel__bullet-nav-item" data-slide-index="2"></li>-->
-          <!--</ol>-->
-          <!--&lt;!&ndash; carousel slide container &ndash;&gt;-->
-          <!--<div class="c-carousel__slides-container">-->
-          <!--&lt;!&ndash; carousel slide &ndash;&gt;-->
-          <!--<div class="c-carousel__slide c-carousel__slide&#45;&#45;is-selected">-->
-          <!--<img class="c-carousel__image" src="images/projects/persona-1/persona-1.png" alt="Persona (Type 1)">-->
-          <!--</div>-->
-          <!--&lt;!&ndash; carousel slide &ndash;&gt;-->
-          <!--<div class="c-carousel__slide">-->
-          <!--<img class="c-carousel__image" src="images/projects/persona-1/persona-1-hovered.png"-->
-          <!--alt="Persona (Type 1) when hovered over">-->
-          <!--</div>-->
-          <!--&lt;!&ndash; carousel slide &ndash;&gt;-->
-          <!--<div class="c-carousel__slide">-->
-          <!--<img class="c-carousel__image" src="images/projects/persona-1/persona-1.gif"-->
-          <!--alt="Persona (Type 1) GIF">-->
-          <!--</div>-->
-          <!--&lt;!&ndash; carousel arrow navigation &ndash;&gt;-->
-          <!--<a href="" class="c-carousel__arrow-nav c-carousel__arrow-nav&#45;&#45;left" data-slide-nav="prev">-->
-          <!--<i class="fa fa-chevron-circle-left fa-2x"></i>-->
-          <!--</a>-->
-          <!--<a href="" class="c-carousel__arrow-nav c-carousel__arrow-nav&#45;&#45;right" data-slide-nav="next">-->
-          <!--<i class="fa fa-chevron-circle-right fa-2x"></i>-->
-          <!--</a>-->
-          <!--</div>-->
-          <!--</div>-->
-          <!--</div>-->
-          <!--<h4>Technologies: HTML5, CSS3 and Vanilla JavaScript</h4>-->
-          <!--<p>Created a simple UI Framework during a Hackathon with the help of a team of awesome students at Bov-->
-          <!--Academy </p>-->
-          <!--<div>-->
-          <!--<a href="" class="regular-link">-->
-          <!--<i class="fa fa-external-link-square" aria-hidden="true"></i> View Live Demo-->
-          <!--</a>-->
-          <!--<a href="" class="regular-link">-->
-          <!--<i class="fa fa-github" aria-hidden="true"></i> View Source on GitHub-->
-          <!--</a>-->
-          <!--</div>-->
-          <!--</div>-->
-
-          <!-- Persona 1 (Author Card Layout) -->
-          <div class="tabs__pane tabs__pane--active">
-            <h2>Persona 1 - New Author Card Layout</h2>
-            <div class="c-carousel__wrapper">
-              <div class="c-carousel c-carousel--fader-type" data-bullet-nav>
-                <!-- bullet navigation -->
-                <ol class="c-carousel__bullet-nav">
-                  <li class="c-carousel__bullet-nav-item c-carousel__bullet-nav-item--is-active"
-                      data-slide-index="0"></li>
-                  <li class="c-carousel__bullet-nav-item" data-slide-index="1"></li>
-                  <li class="c-carousel__bullet-nav-item" data-slide-index="2"></li>
-                </ol>
-                <!-- carousel slide container -->
-                <div class="c-carousel__slides-container">
-                  <!-- carousel slide -->
-                  <div class="c-carousel__slide c-carousel__slide--is-selected">
-                    <img class="c-carousel__image" src="images/projects/persona-1/persona-1.png" alt="Persona (Type 1)">
-                  </div>
-                  <!-- carousel slide -->
-                  <div class="c-carousel__slide">
-                    <img class="c-carousel__image" src="images/projects/persona-1/persona-1-hovered.png"
-                         alt="Persona (Type 1) when hovered over">
-                  </div>
-                  <!-- carousel slide -->
-                  <div class="c-carousel__slide">
-                    <img class="c-carousel__image" src="images/projects/persona-1/persona-1.gif"
-                         alt="Persona (Type 1) GIF">
-                  </div>
-                  <!-- carousel arrow navigation -->
-                  <a href="" class="c-carousel__arrow-nav c-carousel__arrow-nav--left" data-slide-nav="prev">
-                    <i class="fa fa-chevron-circle-left fa-2x"></i>
-                  </a>
-                  <a href="" class="c-carousel__arrow-nav c-carousel__arrow-nav--right" data-slide-nav="next">
-                    <i class="fa fa-chevron-circle-right fa-2x"></i>
-                  </a>
-                </div>
-              </div>
-            </div>
-            <h4>Technologies: HTML5 and CSS3</h4>
-            <p>A new author/creator card layout. Use it to highlight your team members.</p>
-            <div>
-              <a href="" class="regular-link">
-                <i class="fa fa-external-link-square" aria-hidden="true"></i> View Live Demo
-              </a>
-              <a href="" class="regular-link">
-                <i class="fa fa-github" aria-hidden="true"></i> View Source on GitHub
-              </a>
+  <div class="row">
+      <div class="col-md-4 col-sm-6 portfolio-item">
+        <a class="portfolio-link" data-toggle="modal" href="#portfolioModal1">
+          <div class="portfolio-hover">
+            <div class="portfolio-hover-content">
             </div>
           </div>
-
-          <!-- Carousel -->
-          <!--<div class="tabs__pane">-->
-          <!--<h2>Carousel</h2>-->
-          <!--<div class="c-carousel__wrapper">-->
-          <!--<div class="c-carousel c-carousel&#45;&#45;fader-type" data-bullet-nav>-->
-          <!--&lt;!&ndash; bullet navigation &ndash;&gt;-->
-          <!--<ol class="c-carousel__bullet-nav">-->
-          <!--<li class="c-carousel__bullet-nav-item c-carousel__bullet-nav-item&#45;&#45;is-active"-->
-          <!--data-slide-index="0"></li>-->
-          <!--<li class="c-carousel__bullet-nav-item" data-slide-index="1"></li>-->
-          <!--<li class="c-carousel__bullet-nav-item" data-slide-index="2"></li>-->
-          <!--</ol>-->
-          <!--&lt;!&ndash; carousel slide container &ndash;&gt;-->
-          <!--<div class="c-carousel__slides-container">-->
-          <!--&lt;!&ndash; carousel slide &ndash;&gt;-->
-          <!--<div class="c-carousel__slide c-carousel__slide&#45;&#45;is-selected">-->
-          <!--<img class="c-carousel__image" src="images/projects/persona-1/persona-1.png" alt="Persona (Type 1)">-->
-          <!--</div>-->
-          <!--&lt;!&ndash; carousel slide &ndash;&gt;-->
-          <!--<div class="c-carousel__slide">-->
-          <!--<img class="c-carousel__image" src="images/projects/persona-1/persona-1-hovered.png"-->
-          <!--alt="Persona (Type 1) when hovered over">-->
-          <!--</div>-->
-          <!--&lt;!&ndash; carousel slide &ndash;&gt;-->
-          <!--<div class="c-carousel__slide">-->
-          <!--<img class="c-carousel__image" src="images/projects/persona-1/persona-1.gif"-->
-          <!--alt="Persona (Type 1) GIF">-->
-          <!--</div>-->
-          <!--&lt;!&ndash; carousel arrow navigation &ndash;&gt;-->
-          <!--<a href="" class="c-carousel__arrow-nav c-carousel__arrow-nav&#45;&#45;left" data-slide-nav="prev">-->
-          <!--<i class="fa fa-chevron-circle-left fa-2x"></i>-->
-          <!--</a>-->
-          <!--<a href="" class="c-carousel__arrow-nav c-carousel__arrow-nav&#45;&#45;right" data-slide-nav="next">-->
-          <!--<i class="fa fa-chevron-circle-right fa-2x"></i>-->
-          <!--</a>-->
-          <!--</div>-->
-          <!--</div>-->
-          <!--</div>-->
-          <!--<h4>Technologies: HTML5, CSS3 and Vanilla JavaScript</h4>-->
-          <!--<p>Created a simple UI Framework during a Hackathon with the help of a team of awesome students at Bov-->
-          <!--Academy </p>-->
-          <!--<div>-->
-          <!--<a href="" class="regular-link">-->
-          <!--<i class="fa fa-external-link-square" aria-hidden="true"></i> View Live Demo-->
-          <!--</a>-->
-          <!--<a href="" class="regular-link">-->
-          <!--<i class="fa fa-github" aria-hidden="true"></i> View Source on GitHub-->
-          <!--</a>-->
-          <!--</div>-->
-          <!--</div>-->
-
-          <!-- Modals -->
-          <!--<div class="tabs__pane">-->
-          <!--<h2>Modals</h2>-->
-          <!--<div class="c-carousel__wrapper">-->
-          <!--<div class="c-carousel c-carousel&#45;&#45;fader-type" data-bullet-nav>-->
-          <!--&lt;!&ndash; bullet navigation &ndash;&gt;-->
-          <!--<ol class="c-carousel__bullet-nav">-->
-          <!--<li class="c-carousel__bullet-nav-item c-carousel__bullet-nav-item&#45;&#45;is-active"-->
-          <!--data-slide-index="0"></li>-->
-          <!--<li class="c-carousel__bullet-nav-item" data-slide-index="1"></li>-->
-          <!--<li class="c-carousel__bullet-nav-item" data-slide-index="2"></li>-->
-          <!--</ol>-->
-          <!--&lt;!&ndash; carousel slide container &ndash;&gt;-->
-          <!--<div class="c-carousel__slides-container">-->
-          <!--&lt;!&ndash; carousel slide &ndash;&gt;-->
-          <!--<div class="c-carousel__slide c-carousel__slide&#45;&#45;is-selected">-->
-          <!--<img class="c-carousel__image" src="images/projects/persona-1/persona-1.png" alt="Persona (Type 1)">-->
-          <!--</div>-->
-          <!--&lt;!&ndash; carousel slide &ndash;&gt;-->
-          <!--<div class="c-carousel__slide">-->
-          <!--<img class="c-carousel__image" src="images/projects/persona-1/persona-1-hovered.png"-->
-          <!--alt="Persona (Type 1) when hovered over">-->
-          <!--</div>-->
-          <!--&lt;!&ndash; carousel slide &ndash;&gt;-->
-          <!--<div class="c-carousel__slide">-->
-          <!--<img class="c-carousel__image" src="images/projects/persona-1/persona-1.gif"-->
-          <!--alt="Persona (Type 1) GIF">-->
-          <!--</div>-->
-          <!--&lt;!&ndash; carousel arrow navigation &ndash;&gt;-->
-          <!--<a href="" class="c-carousel__arrow-nav c-carousel__arrow-nav&#45;&#45;left" data-slide-nav="prev">-->
-          <!--<i class="fa fa-chevron-circle-left fa-2x"></i>-->
-          <!--</a>-->
-          <!--<a href="" class="c-carousel__arrow-nav c-carousel__arrow-nav&#45;&#45;right" data-slide-nav="next">-->
-          <!--<i class="fa fa-chevron-circle-right fa-2x"></i>-->
-          <!--</a>-->
-          <!--</div>-->
-          <!--</div>-->
-          <!--</div>-->
-          <!--<h4>Technologies: HTML5, CSS3 and Vanilla JavaScript</h4>-->
-          <!--<p>Created a simple UI Framework during a Hackathon with the help of a team of awesome students at Bov-->
-          <!--Academy </p>-->
-          <!--<div>-->
-          <!--<a href="" class="regular-link">-->
-          <!--<i class="fa fa-external-link-square" aria-hidden="true"></i> View Live Demo-->
-          <!--</a>-->
-          <!--<a href="" class="regular-link">-->
-          <!--<i class="fa fa-github" aria-hidden="true"></i> View Source on GitHub-->
-          <!--</a>-->
-          <!--</div>-->
-          <!--</div>-->
-
-          <!-- Tooltips -->
-          <div class="tabs__pane">
-            <h2>Tooltips</h2>
-            <div class="c-carousel__wrapper">
-              <div class="c-carousel c-carousel--fader-type" data-bullet-nav>
-                <!-- bullet navigation -->
-                <ol class="c-carousel__bullet-nav">
-                  <li class="c-carousel__bullet-nav-item c-carousel__bullet-nav-item--is-active"
-                      data-slide-index="0"></li>
-                  <li class="c-carousel__bullet-nav-item" data-slide-index="1"></li>
-                  <li class="c-carousel__bullet-nav-item" data-slide-index="2"></li>
-                  <li class="c-carousel__bullet-nav-item" data-slide-index="3"></li>
-                  <li class="c-carousel__bullet-nav-item" data-slide-index="4"></li>
-                </ol>
-                <!-- carousel slide container -->
-                <div class="c-carousel__slides-container">
-                  <!-- carousel slide -->
-                  <div class="c-carousel__slide c-carousel__slide--is-selected">
-                    <img class="c-carousel__image" src="images/projects/tooltips/tooltip-left.png" alt="Tooltip Left">
-                  </div>
-                  <!-- carousel slide -->
-                  <div class="c-carousel__slide">
-                    <img class="c-carousel__image" src="images/projects/tooltips/tooltip-above.png"
-                         alt="Tooltip Above">
-                  </div>
-                  <!-- carousel slide -->
-                  <div class="c-carousel__slide">
-                    <img class="c-carousel__image" src="images/projects/tooltips/tooltip-below.png"
-                         alt="Tooltip Below">
-                  </div>
-                  <!-- carousel slide -->
-                  <div class="c-carousel__slide">
-                    <img class="c-carousel__image" src="images/projects/tooltips/tooltip-right.png"
-                         alt="Tooltip Right">
-                  </div>
-                  <!-- carousel slide -->
-                  <div class="c-carousel__slide">
-                    <img class="c-carousel__image" src="images/projects/tooltips/tooltip.gif"
-                         alt="Tooltip GIF">
-                  </div>
-                  <!-- carousel arrow navigation -->
-                  <a href="" class="c-carousel__arrow-nav c-carousel__arrow-nav--left" data-slide-nav="prev">
-                    <i class="fa fa-chevron-circle-left fa-2x"></i>
-                  </a>
-                  <a href="" class="c-carousel__arrow-nav c-carousel__arrow-nav--right" data-slide-nav="next">
-                    <i class="fa fa-chevron-circle-right fa-2x"></i>
-                  </a>
-                </div>
-              </div>
-            </div>
-            <h4>Technologies: HTML5 and CSS3</h4>
-            <p>Tooltips built using HTML5 and CSS3 only. Part of UI Framework built during a Hackathon.</p>
-            <p>A (modified) working demo is in the
-              <a href="#skills" class="regular-link regular-link--no-margin">skills</a>
-              section of this portfolio (hover over bar graphs).</p>
-            <div>
-              <a href="" class="regular-link">
-                <i class="fa fa-external-link-square" aria-hidden="true"></i> View Live Demo
-              </a>
-              <a href="" class="regular-link">
-                <i class="fa fa-github" aria-hidden="true"></i> View Source on GitHub
-              </a>
+          <img class="img-fluid" src="images/portfolio/01-thumbnail.jpg" alt="">
+        </a>
+        <div class="portfolio-caption">
+          <h4>Threads</h4>
+          <p class="text-muted">Illustration</p>
+        </div>
+      </div>
+      <div class="col-md-4 col-sm-6 portfolio-item">
+        <a class="portfolio-link" data-toggle="modal" href="#portfolioModal2">
+          <div class="portfolio-hover">
+            <div class="portfolio-hover-content">
             </div>
           </div>
-
-          <!-- Business Card -->
-          <div class="tabs__pane">
-            <h2>Business Card</h2>
-            <div class="c-carousel__wrapper">
-              <div class="c-carousel c-carousel--fader-type" data-bullet-nav>
-                <!-- bullet navigation -->
-                <ol class="c-carousel__bullet-nav">
-                  <li class="c-carousel__bullet-nav-item c-carousel__bullet-nav-item--is-active"
-                      data-slide-index="0"></li>
-                  <li class="c-carousel__bullet-nav-item" data-slide-index="1"></li>
-                  <li class="c-carousel__bullet-nav-item" data-slide-index="2"></li>
-                </ol>
-                <!-- carousel slide container -->
-                <div class="c-carousel__slides-container">
-                  <!-- carousel slide -->
-                  <div class="c-carousel__slide c-carousel__slide--is-selected">
-                    <img class="c-carousel__image" src="images/projects/business-card/business-card.png"
-                         alt="Business Card">
-                  </div>
-                  <!-- carousel slide -->
-                  <div class="c-carousel__slide">
-                    <img class="c-carousel__image" src="images/projects/business-card/business-card-flipped.png"
-                         alt="Business Card Flipped">
-                  </div>
-                  <!-- carousel slide -->
-                  <div class="c-carousel__slide">
-                    <img class="c-carousel__image" src="images/projects/business-card/business-card.gif"
-                         alt="Business Card Flipping GIF">
-                  </div>
-                  <!-- carousel arrow navigation -->
-                  <a href="" class="c-carousel__arrow-nav c-carousel__arrow-nav--left" data-slide-nav="prev">
-                    <i class="fa fa-chevron-circle-left fa-2x"></i>
-                  </a>
-                  <a href="" class="c-carousel__arrow-nav c-carousel__arrow-nav--right" data-slide-nav="next">
-                    <i class="fa fa-chevron-circle-right fa-2x"></i>
-                  </a>
-                </div>
-              </div>
-            </div>
-            <h4>Technologies: HTML5 and CSS3</h4>
-            <p>A Business/Contact card with 3D Flip Animation built using HTML5 and CSS3 only.</p>
-            <p>A (little modified) working demo is in the
-              <a href="#contact" class="regular-link regular-link--no-margin">contact </a>
-              section of this portfolio.</p>
-            <div>
-              <a class="regular-link" href="https://aashishnagpal.github.io/ba-mastering-css-projects/business-card/">
-                <i class="fa fa-external-link-square" aria-hidden="true"></i> View Live Demo
-              </a>
-              <a class="regular-link"
-                 href="https://github.com/aashishnagpal/ba-mastering-css-projects/tree/master/business-card">
-                <i class="fa fa-github" aria-hidden="true"></i> View Source on GitHub
-              </a>
+          <img class="img-fluid" src="images/portfolio/02-thumbnail.jpg" alt="">
+        </a>
+        <div class="portfolio-caption">
+          <h4>Explore</h4>
+          <p class="text-muted">Graphic Design</p>
+        </div>
+      </div>
+      <div class="col-md-4 col-sm-6 portfolio-item">
+        <a class="portfolio-link" data-toggle="modal" href="#portfolioModal3">
+          <div class="portfolio-hover">
+            <div class="portfolio-hover-content">
             </div>
           </div>
-
-          <!-- Accordion -->
-          <div class="tabs__pane">
-            <h2>Accordion</h2>
-            <div class="c-carousel__wrapper">
-              <div class="c-carousel c-carousel--fader-type" data-bullet-nav>
-                <!-- bullet navigation -->
-                <ol class="c-carousel__bullet-nav">
-                  <li class="c-carousel__bullet-nav-item c-carousel__bullet-nav-item--is-active"
-                      data-slide-index="0"></li>
-                  <li class="c-carousel__bullet-nav-item" data-slide-index="1"></li>
-                  <li class="c-carousel__bullet-nav-item" data-slide-index="2"></li>
-                </ol>
-                <!-- carousel slide container -->
-                <div class="c-carousel__slides-container">
-                  <!-- carousel slide -->
-                  <div class="c-carousel__slide c-carousel__slide--is-selected">
-                    <img class="c-carousel__image" src="images/projects/accordion/accordion.png" alt="Accordion">
-                  </div>
-                  <!-- carousel slide -->
-                  <div class="c-carousel__slide">
-                    <img class="c-carousel__image" src="images/projects/accordion/accordion-working.gif"
-                         alt="Working Accordion GIF">
-                  </div>
-                  <!-- carousel slide -->
-                  <div class="c-carousel__slide">
-                    <img class="c-carousel__image" src="images/projects/accordion/accordion-responsive.gif"
-                         alt="Responsive Accordion GIF">
-                  </div>
-                  <!-- carousel arrow navigation -->
-                  <a href="" class="c-carousel__arrow-nav c-carousel__arrow-nav--left" data-slide-nav="prev">
-                    <i class="fa fa-chevron-circle-left fa-2x"></i>
-                  </a>
-                  <a href="" class="c-carousel__arrow-nav c-carousel__arrow-nav--right" data-slide-nav="next">
-                    <i class="fa fa-chevron-circle-right fa-2x"></i>
-                  </a>
-                </div>
-              </div>
-            </div>
-            <h4>Technologies: HTML5 and CSS3</h4>
-            <p>A responsive Accordion UI component created using HTML5 and CSS3 only.</p>
-            <div>
-              <a class="regular-link" href="https://aashishnagpal.github.io/ba-intro-to-rwd-projects/accordion/">
-                <i class="fa fa-external-link-square" aria-hidden="true"></i> View Live Demo
-              </a>
-              <a class="regular-link"
-                 href="https://github.com/aashishnagpal/ba-intro-to-rwd-projects/tree/master/accordion">
-                <i class="fa fa-github" aria-hidden="true"></i> View Source on GitHub
-              </a>
+          <img class="img-fluid" src="images/portfolio/03-thumbnail.jpg" alt="">
+        </a>
+        <div class="portfolio-caption">
+          <h4>Finish</h4>
+          <p class="text-muted">Identity</p>
+        </div>
+      </div>
+      <div class="col-md-4 col-sm-6 portfolio-item">
+        <a class="portfolio-link" data-toggle="modal" href="#portfolioModal4">
+          <div class="portfolio-hover">
+            <div class="portfolio-hover-content">
             </div>
           </div>
-
-          <!-- Image Gallery -->
-          <div class="tabs__pane">
-            <h2>Image Gallery</h2>
-            <div class="c-carousel__wrapper">
-              <div class="c-carousel c-carousel--fader-type" data-bullet-nav>
-                <!-- bullet navigation -->
-                <ol class="c-carousel__bullet-nav">
-                  <li class="c-carousel__bullet-nav-item c-carousel__bullet-nav-item--is-active"
-                      data-slide-index="0"></li>
-                  <li class="c-carousel__bullet-nav-item" data-slide-index="1"></li>
-                  <li class="c-carousel__bullet-nav-item" data-slide-index="2"></li>
-                </ol>
-                <!-- carousel slide container -->
-                <div class="c-carousel__slides-container">
-                  <!-- carousel slide -->
-                  <div class="c-carousel__slide c-carousel__slide--is-selected">
-                    <img class="c-carousel__image" src="images/projects/image-gallery/gallery.png"
-                         alt="Image Gallery">
-                  </div>
-                  <!-- carousel slide -->
-                  <div class="c-carousel__slide">
-                    <img class="c-carousel__image" src="images/projects/image-gallery/gallery-2.png"
-                         alt="Image Gallery">
-                  </div>
-                  <!-- carousel slide -->
-                  <div class="c-carousel__slide">
-                    <img class="c-carousel__image" src="images/projects/image-gallery/gallery-3.png"
-                         alt="Image Gallery">
-                  </div>
-                  <!-- carousel arrow navigation -->
-                  <a href="" class="c-carousel__arrow-nav c-carousel__arrow-nav--left" data-slide-nav="prev">
-                    <i class="fa fa-chevron-circle-left fa-2x"></i>
-                  </a>
-                  <a href="" class="c-carousel__arrow-nav c-carousel__arrow-nav--right" data-slide-nav="next">
-                    <i class="fa fa-chevron-circle-right fa-2x"></i>
-                  </a>
-                </div>
-              </div>
-            </div>
-            <h4>Technologies: HTML5 and CSS3</h4>
-            <p>Image Gallery built using HTML5 and CSS3 only.</p>
-            <div>
-              <a class="regular-link" href="https://aashishnagpal.github.io/ba-mastering-css-projects/image-gallery/">
-                <i class="fa fa-external-link-square" aria-hidden="true"></i> View Live Demo
-              </a>
-              <a class="regular-link"
-                 href="https://github.com/aashishnagpal/ba-mastering-css-projects/tree/master/image-gallery">
-                <i class="fa fa-github" aria-hidden="true"></i> View Source on GitHub
-              </a>
+          <img class="img-fluid" src="images/portfolio/04-thumbnail.jpg" alt="">
+        </a>
+        <div class="portfolio-caption">
+          <h4>Lines</h4>
+          <p class="text-muted">Branding</p>
+        </div>
+      </div>
+      <div class="col-md-4 col-sm-6 portfolio-item">
+        <a class="portfolio-link" data-toggle="modal" href="#portfolioModal5">
+          <div class="portfolio-hover">
+            <div class="portfolio-hover-content">
             </div>
           </div>
-
-          <!-- Tabs -->
-          <div class="tabs__pane">
-            <h2>Tabs</h2>
-            <div class="c-carousel__wrapper">
-              <div class="c-carousel c-carousel--fader-type" data-bullet-nav>
-                <!-- bullet navigation -->
-                <ol class="c-carousel__bullet-nav">
-                  <li class="c-carousel__bullet-nav-item c-carousel__bullet-nav-item--is-active"
-                      data-slide-index="0"></li>
-                  <li class="c-carousel__bullet-nav-item" data-slide-index="1"></li>
-                </ol>
-                <!-- carousel slide container -->
-                <div class="c-carousel__slides-container">
-                  <!-- carousel slide -->
-                  <div class="c-carousel__slide c-carousel__slide--is-selected">
-                    <img class="c-carousel__image" src="images/projects/tabs/tabs.png" alt="Tabs">
-                  </div>
-                  <!-- carousel slide -->
-                  <div class="c-carousel__slide">
-                    <img class="c-carousel__image" src="images/projects/tabs/tabs.gif" alt="Tabs GIF">
-                  </div>
-                  <!-- carousel arrow navigation -->
-                  <a href="" class="c-carousel__arrow-nav c-carousel__arrow-nav--left"
-                     data-slide-nav="prev">
-                    <i class="fa fa-chevron-circle-left fa-2x"></i>
-                  </a>
-                  <a href="" class="c-carousel__arrow-nav c-carousel__arrow-nav--right"
-                     data-slide-nav="next">
-                    <i class="fa fa-chevron-circle-right fa-2x"></i>
-                  </a>
-                </div>
-              </div>
-            </div>
-            <h4>Technologies: HTML5 and CSS3</h4>
-            <p>Tabs created using HTML5 and CSS3 only.</p>
-            <div>
-              <a class="regular-link" href="https://aashishnagpal.github.io/ba-mastering-css-projects/tabs/">
-                <i class="fa fa-external-link-square" aria-hidden="true"></i> View Live Demo
-              </a>
-              <a class="regular-link"
-                 href="https://github.com/aashishnagpal/ba-mastering-css-projects/tree/master/tabs">
-                <i class="fa fa-github" aria-hidden="true"></i> View Source on GitHub
-              </a>
+          <img class="img-fluid" src="images/portfolio/05-thumbnail.jpg" alt="">
+        </a>
+        <div class="portfolio-caption">
+          <h4>Southwest</h4>
+          <p class="text-muted">Website Design</p>
+        </div>
+      </div>
+      <div class="col-md-4 col-sm-6 portfolio-item">
+        <a class="portfolio-link" data-toggle="modal" href="#portfolioModal6">
+          <div class="portfolio-hover">
+            <div class="portfolio-hover-content">
             </div>
           </div>
-
-          <!-- Blog UI Design -->
-          <div class="tabs__pane">
-            <h2>Blog UI Design Implementation</h2>
-            <div class="c-carousel__wrapper">
-              <div class="c-carousel c-carousel--fader-type" data-bullet-nav>
-                <!-- bullet navigation -->
-                <ol class="c-carousel__bullet-nav">
-                  <li class="c-carousel__bullet-nav-item c-carousel__bullet-nav-item--is-active"
-                      data-slide-index="0"></li>
-                  <li class="c-carousel__bullet-nav-item" data-slide-index="1"></li>
-                  <li class="c-carousel__bullet-nav-item" data-slide-index="2"></li>
-                  <li class="c-carousel__bullet-nav-item" data-slide-index="3"></li>
-                </ol>
-                <!-- carousel slide container -->
-                <div class="c-carousel__slides-container">
-                  <!-- carousel slide -->
-                  <div class="c-carousel__slide c-carousel__slide--is-selected">
-                    <img class="c-carousel__image" src="images/projects/blog-design/top.png" alt="Blog Design">
-                  </div>
-                  <!-- carousel slide -->
-                  <div class="c-carousel__slide">
-                    <img class="c-carousel__image" src="images/projects/blog-design/middle.png"
-                         alt="Blog Design">
-                  </div>
-                  <!-- carousel slide -->
-                  <div class="c-carousel__slide">
-                    <img class="c-carousel__image" src="images/projects/blog-design/related-articles.png"
-                         alt="Related Articles Section">
-                  </div>
-                  <!-- carousel slide -->
-                  <div class="c-carousel__slide">
-                    <img class="c-carousel__image" src="images/projects/blog-design/comments-section.png"
-                         alt="Comments Section">
-                  </div>
-                  <!-- carousel arrow navigation -->
-                  <a href="" class="c-carousel__arrow-nav c-carousel__arrow-nav--left" data-slide-nav="prev">
-                    <i class="fa fa-chevron-circle-left fa-2x"></i>
-                  </a>
-                  <a href="" class="c-carousel__arrow-nav c-carousel__arrow-nav--right" data-slide-nav="next">
-                    <i class="fa fa-chevron-circle-right fa-2x"></i>
-                  </a>
-                </div>
-              </div>
-            </div>
-            <h4>Technologies: HTML5 and CSS3</h4>
-            <p>Implemented a given mockup of a Blog page UI into an actual page. Worked in a team of 2.</p>
-            <div>
-              <a class="regular-link" href="https://pdeleon.github.io/blog-moderndeveloper-ui-project/">
-                <i class="fa fa-external-link-square" aria-hidden="true"></i> View Live Demo
-              </a>
-              <a class="regular-link" href="https://github.com/pdeleon/blog-moderndeveloper-ui-project">
-                <i class="fa fa-github" aria-hidden="true"></i> View Source on GitHub
-              </a>
-            </div>
-          </div>
-
-          <!-- Products and Shopping Cart -->
-          <div class="tabs__pane">
-            <h2>Products and Shopping Cart</h2>
-            <div class="c-carousel__wrapper">
-              <div class="c-carousel c-carousel--fader-type" data-bullet-nav>
-                <!-- bullet navigation -->
-                <ol class="c-carousel__bullet-nav">
-                  <li class="c-carousel__bullet-nav-item c-carousel__bullet-nav-item--is-active"
-                      data-slide-index="0"></li>
-                  <li class="c-carousel__bullet-nav-item" data-slide-index="1"></li>
-                  <li class="c-carousel__bullet-nav-item" data-slide-index="2"></li>
-                  <li class="c-carousel__bullet-nav-item" data-slide-index="3"></li>
-                  <li class="c-carousel__bullet-nav-item" data-slide-index="4"></li>
-                  <li class="c-carousel__bullet-nav-item" data-slide-index="5"></li>
-                </ol>
-                <!-- carousel slide container -->
-                <div class="c-carousel__slides-container">
-                  <!-- carousel slide -->
-                  <div class="c-carousel__slide c-carousel__slide--is-selected">
-                    <img class="c-carousel__image" src="images/projects/products/top.png" alt="Products Page">
-                  </div>
-                  <!-- carousel slide -->
-                  <div class="c-carousel__slide">
-                    <img class="c-carousel__image" src="images/projects/products/middle.png"
-                         alt="Products page 2">
-                  </div>
-                  <!-- carousel slide -->
-                  <div class="c-carousel__slide">
-                    <img class="c-carousel__image" src="images/projects/products/cart-add.png"
-                         alt="Products page 2">
-                  </div>
-                  <!-- carousel slide -->
-                  <div class="c-carousel__slide">
-                    <img class="c-carousel__image" src="images/projects/products/cart-promo-info.png"
-                         alt="Products page 2">
-                  </div>
-                  <!-- carousel slide -->
-                  <div class="c-carousel__slide">
-                    <img class="c-carousel__image" src="images/projects/products/cart-promo-dropdown.png"
-                         alt="Products page 2">
-                  </div>
-                  <!-- carousel slide -->
-                  <div class="c-carousel__slide">
-                    <img class="c-carousel__image" src="images/projects/products/cart-promo-applied.png"
-                         alt="Products page 2">
-                  </div>
-                  <!-- carousel arrow navigation -->
-                  <a href="" class="c-carousel__arrow-nav c-carousel__arrow-nav--left"
-                     data-slide-nav="prev">
-                    <i class="fa fa-chevron-circle-left fa-2x"></i>
-                  </a>
-                  <a href="" class="c-carousel__arrow-nav c-carousel__arrow-nav--right"
-                     data-slide-nav="next">
-                    <i class="fa fa-chevron-circle-right fa-2x"></i>
-                  </a>
-                </div>
-              </div>
-            </div>
-            <h4>Technologies: HTML5, CSS3 and Vanilla JavaScript</h4>
-            <p>Simple client-side Products and Shopping cart page. JavaScript is used to show and add products in
-              cart.</p>
-            <div>
-              <a class="regular-link" href="https://aashishnagpal.github.io/md-products/">
-                <i class="fa fa-external-link-square" aria-hidden="true"></i> View Live Demo
-              </a>
-              <a class="regular-link" href="https://github.com/aashishnagpal/md-products">
-                <i class="fa fa-github" aria-hidden="true"></i> View Source on GitHub
-              </a>
-            </div>
-          </div>
-
-          <!-- Multiple Forms -->
-          <div class="tabs__pane">
-            <h2>Multiple Forms</h2>
-            <div class="c-carousel__wrapper">
-              <div class="c-carousel c-carousel--fader-type" data-bullet-nav>
-                <!-- bullet navigation -->
-                <ol class="c-carousel__bullet-nav">
-                  <li class="c-carousel__bullet-nav-item c-carousel__bullet-nav-item--is-active"
-                      data-slide-index="0"></li>
-                  <li class="c-carousel__bullet-nav-item" data-slide-index="1"></li>
-                  <li class="c-carousel__bullet-nav-item" data-slide-index="2"></li>
-                  <li class="c-carousel__bullet-nav-item" data-slide-index="3"></li>
-                  <li class="c-carousel__bullet-nav-item" data-slide-index="4"></li>
-                  <li class="c-carousel__bullet-nav-item" data-slide-index="5"></li>
-                </ol>
-                <!-- carousel slide container -->
-                <div class="c-carousel__slides-container">
-                  <!-- carousel slide -->
-                  <div class="c-carousel__slide c-carousel__slide--is-selected">
-                    <img class="c-carousel__image" src="images/projects/forms/registration.png" alt="Registration Form">
-                  </div>
-                  <!-- carousel slide -->
-                  <div class="c-carousel__slide">
-                    <img class="c-carousel__image" src="images/projects/forms/login.png" alt="Login Form">
-                  </div>
-                  <!-- carousel slide -->
-                  <div class="c-carousel__slide">
-                    <img class="c-carousel__image" src="images/projects/forms/shipping-billing.png"
-                         alt="Shipping and Billing Form">
-                  </div>
-                  <!-- carousel slide -->
-                  <div class="c-carousel__slide">
-                    <img class="c-carousel__image" src="images/projects/forms/credit-card.png"
-                         alt="Credit Card Payment Form">
-                  </div>
-                  <!-- carousel slide -->
-                  <div class="c-carousel__slide">
-                    <img class="c-carousel__image" src="images/projects/forms/color-builder.png"
-                         alt="Color Builder Form">
-                  </div>
-                  <!-- carousel slide -->
-                  <div class="c-carousel__slide">
-                    <img class="c-carousel__image" src="images/projects/forms/scheduling.png" alt="Scheduling Form">
-                  </div>
-                  <!-- carousel arrow navigation -->
-                  <a href="" class="c-carousel__arrow-nav c-carousel__arrow-nav--left" data-slide-nav="prev">
-                    <i class="fa fa-chevron-circle-left fa-2x"></i>
-                  </a>
-                  <a href="" class="c-carousel__arrow-nav c-carousel__arrow-nav--right" data-slide-nav="next">
-                    <i class="fa fa-chevron-circle-right fa-2x"></i>
-                  </a>
-                </div>
-              </div>
-            </div>
-            <h4>Technologies: HTML5, CSS3 and Vanilla JavaScript</h4>
-            <p>Created multiple forms using HTML5 and CSS3. Basic JavaScript employed for validations.</p>
-            <div>
-              <a class="regular-link" href="https://aashishnagpal.github.io/md-css-intro-forms/">
-                <i class="fa fa-external-link-square" aria-hidden="true"></i> View Live Demo
-              </a>
-              <a class="regular-link" href="https://github.com/aashishnagpal/md-css-intro-forms">
-                <i class="fa fa-github" aria-hidden="true"></i> View Source on GitHub
-              </a>
-            </div>
-          </div>
-
-          <!-- Calculator -->
-          <div class="tabs__pane">
-            <h2>Calculator</h2>
-            <div class="c-carousel__wrapper">
-              <div class="c-carousel c-carousel--fader-type" data-bullet-nav>
-                <!-- bullet navigation -->
-                <ol class="c-carousel__bullet-nav">
-                  <li class="c-carousel__bullet-nav-item c-carousel__bullet-nav-item--is-active"
-                      data-slide-index="0"></li>
-                  <li class="c-carousel__bullet-nav-item" data-slide-index="1"></li>
-                  <li class="c-carousel__bullet-nav-item" data-slide-index="2"></li>
-                </ol>
-                <!-- carousel slide container -->
-                <div class="c-carousel__slides-container">
-                  <!-- carousel slide -->
-                  <div class="c-carousel__slide c-carousel__slide--is-selected">
-                    <img class="c-carousel__image" src="images/projects/calculator/calculator-init.png"
-                         alt="Calculator">
-                  </div>
-                  <!-- carousel slide -->
-                  <div class="c-carousel__slide">
-                    <img class="c-carousel__image" src="images/projects/calculator/calculator-calc.png"
-                         alt="Calculator showing some calculations">
-                  </div>
-                  <!-- carousel slide -->
-                  <div class="c-carousel__slide">
-                    <img class="c-carousel__image" src="images/projects/calculator/calculator-calc.gif"
-                         alt="Calculator GIF">
-                  </div>
-                  <!-- carousel arrow navigation -->
-                  <a href="" class="c-carousel__arrow-nav c-carousel__arrow-nav--left"
-                     data-slide-nav="prev">
-                    <i class="fa fa-chevron-circle-left fa-2x"></i>
-                  </a>
-                  <a href="" class="c-carousel__arrow-nav c-carousel__arrow-nav--right"
-                     data-slide-nav="next">
-                    <i class="fa fa-chevron-circle-right fa-2x"></i>
-                  </a>
-                </div>
-              </div>
-            </div>
-            <h4>Technologies: HTML5, CSS3 and Vanilla JavaScript</h4>
-            <p>A basic calculator app with a modern design. JavaScript is used to add functionality.</p>
-            <div>
-              <a href="" class="regular-link">
-                <i class="fa fa-external-link-square" aria-hidden="true"></i> View Live Demo
-              </a>
-              <a href="" class="regular-link">
-                <i class="fa fa-github" aria-hidden="true"></i> View Source on GitHub
-              </a>
-            </div>
-          </div>
-
-          <!-- Profile Sidebar -->
-          <div class="tabs__pane">
-            <h2>Profile Sidebar</h2>
-            <div class="c-carousel__wrapper">
-              <div class="c-carousel c-carousel--fader-type" data-bullet-nav>
-                <div class="c-carousel__slides-container">
-                  <!-- carousel slide -->
-                  <div class="c-carousel__slide c-carousel__slide--is-selected">
-                    <img class="c-carousel__image image--height-override"
-                         src="images/projects/profile-sidebar/sidebar.png"
-                         alt="Profile Sidebar">
-                  </div>
-                </div>
-              </div>
-            </div>
-            <h4>Technologies: HTML5 and CSS3</h4>
-            <p>A sample introduction sidebar which could be used on a profile.</p>
-            <div>
-              <a class="regular-link" href="https://aashishnagpal.github.io/md-css-intro-profile-card/">
-                <i class="fa fa-external-link-square" aria-hidden="true"></i> View Live Demo
-              </a>
-              <a class="regular-link" href="https://github.com/aashishnagpal/md-css-intro-profile-card">
-                <i class="fa fa-github" aria-hidden="true"></i> View Source on GitHub
-              </a>
-            </div>
-          </div>
-
-          <!-- Button Web Component -->
-          <div class="tabs__pane">
-            <h2>Button Web Component</h2>
-            <div class="c-carousel__wrapper">
-              <div class="c-carousel c-carousel--fader-type" data-bullet-nav>
-                <!-- bullet navigation -->
-                <ol class="c-carousel__bullet-nav">
-                  <li class="c-carousel__bullet-nav-item c-carousel__bullet-nav-item--is-active"
-                      data-slide-index="0"></li>
-                  <li class="c-carousel__bullet-nav-item" data-slide-index="1"></li>
-                </ol>
-                <!-- carousel slide container -->
-                <div class="c-carousel__slides-container">
-                  <!-- carousel slide -->
-                  <div class="c-carousel__slide c-carousel__slide--is-selected">
-                    <img class="c-carousel__image" src="images/projects/button-component/buttons.png"
-                         alt="Button Component">
-                  </div>
-                  <!-- carousel slide -->
-                  <div class="c-carousel__slide">
-                    <img class="c-carousel__image" src="images/projects/button-component/buttons.gif"
-                         alt="Button Component GIF">
-                  </div>
-                  <!-- carousel arrow navigation -->
-                  <a href="" class="c-carousel__arrow-nav c-carousel__arrow-nav--left" data-slide-nav="prev">
-                    <i class="fa fa-chevron-circle-left fa-2x"></i>
-                  </a>
-                  <a href="" class="c-carousel__arrow-nav c-carousel__arrow-nav--right" data-slide-nav="next">
-                    <i class="fa fa-chevron-circle-right fa-2x"></i>
-                  </a>
-                </div>
-              </div>
-            </div>
-            <h4>Technologies: HTML5 and CSS3</h4>
-            <p>Created first ever modular web component - a few buttons.</p>
-            <div>
-              <a class="regular-link"
-                 href="https://aashishnagpal.github.io/learn-md-web-components/components/buttons/">
-                <i class="fa fa-external-link-square" aria-hidden="true"></i> View Live Demo
-              </a>
-              <a class="regular-link" href="https://github.com/aashishnagpal/learn-md-web-components">
-                <i class="fa fa-github" aria-hidden="true"></i> View Source on GitHub
-              </a>
-            </div>
-          </div>
+          <img class="img-fluid" src="images/portfolio/06-thumbnail.jpg" alt="">
+        </a>
+        <div class="portfolio-caption">
+          <h4>Window</h4>
+          <p class="text-muted">Photography</p>
         </div>
       </div>
     </div>
-  </div>
 </section>
+
+
+<section id="timeline" class="eui-grid__container">
+  <div class="eui-grid__row">
+    <div class="eui-grid__column eui-grid__col-size-12-of-12">
+      <h1>Timeline</h1>
+      <p></p>
+    </div>
+  </div>
+  <div class="eui-grid__row">
+        <div class="row">
+          <div class="col-lg-12 text-center">
+            <h2 class="section-heading text-uppercase">IT Experience</h2>
+            <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-12">
+            <ul class="timeline">
+              <li>
+                <div class="timeline-image">
+                  <img class="rounded-circle img-experience" src="images/about/1.jpg" alt="">
+                </div>
+                <div class="timeline-panel">
+                  <div class="timeline-heading">
+                    <h4>February 2014 - September 2014</h4>
+                    <h4 class="subheading">Infosys</h4>
+                  </div>
+                  <div class="timeline-body">
+                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
+                  </div>
+                </div>
+              </li>
+              <li class="timeline-inverted">
+                <div class="timeline-image">
+                  <img class="rounded-circle img-experience" src="images/about/2.jpg" alt="">
+                </div>
+                <div class="timeline-panel">
+                  <div class="timeline-heading">
+                    <h4>December 2014 - May 2018</h4>
+                    <h4 class="subheading">HARMAN Connected Services</h4>
+                  </div>
+                  <div class="timeline-body">
+                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="timeline-image">
+                  <img class="rounded-circle img-experience" src="images/about/3.jpg" alt="">
+                </div>
+                <div class="timeline-panel">
+                  <div class="timeline-heading">
+                    <h4>May 2018 - June 2019</h4>
+                    <h4 class="subheading">TATA Consultancy Services</h4>
+                  </div>
+                  <div class="timeline-body">
+                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
+                  </div>
+                </div>
+              </li>
+              <li class="timeline-inverted">
+                <div class="timeline-image">
+                  <img class="rounded-circle img-experience" src="images/about/4.jpg" alt="">
+                </div>
+                <div class="timeline-panel">
+                  <div class="timeline-heading">
+                    <h4>June 2019 - Till Present</h4>
+                    <h4 class="subheading">ABB Ability Innovation Center</h4>
+                  </div>
+                  <div class="timeline-body">
+                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
+                  </div>
+                </div>
+              </li>
+              <li class="timeline-inverted">
+                <div class="timeline-image">
+                  <h4>Be Part
+                    <br>Of Our
+                    <br>Story!</h4>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+</section>
+
+
 <section id="skills" class="eui-grid__container">
   <div class="eui-grid__row">
     <div class="eui-grid__column eui-grid__col-size-12-of-12">
@@ -1042,24 +308,20 @@
               <div class="tooltip">Bring it on!</div>
             </div>
             <div class="bar-graph__bar tooltip-container" data-level="75">
-              <p class="bar-graph__bar-title">JavaScript/jQuery</p>
+              <p class="bar-graph__bar-title">Angular/TS</p>
               <div class="tooltip">Bring it on!</div>
             </div>
             <div class="bar-graph__bar tooltip-container" data-level="45">
-              <p class="bar-graph__bar-title">AngularJS</p>
+              <p class="bar-graph__bar-title">JavaScript/jQuery</p>
               <div class="tooltip">I'm Comfortable.</div>
             </div>
-            <div class="bar-graph__bar tooltip-container" data-level="10">
-              <p class="bar-graph__bar-title">Angular2/TS</p>
-              <div class="tooltip">Just starting.</div>
+            <div class="bar-graph__bar tooltip-container" data-level="80">
+              <p class="bar-graph__bar-title">Angular JS</p>
+              <div class="tooltip">Bring it on!</div>
             </div>
             <div class="bar-graph__bar tooltip-container" data-level="10">
               <p class="bar-graph__bar-title">React.js</p>
               <div class="tooltip">Just starting.</div>
-            </div>
-            <div class="bar-graph__bar tooltip-container" data-level="45">
-              <p class="bar-graph__bar-title">Handlebars.js</p>
-              <div class="tooltip">Still learning.</div>
             </div>
           </div>
         </div>
@@ -1072,52 +334,25 @@
             <div class="bar-graph__legend-value">Learning</div>
           </div>
           <div class="bar-graph__bars">
-            <div class="bar-graph__bar tooltip-container" data-level="25">
+            <div class="bar-graph__bar tooltip-container" data-level="55">
               <p class="bar-graph__bar-title">Node.js</p>
               <div class="tooltip">Still learning.</div>
             </div>
-            <div class="bar-graph__bar tooltip-container" data-level="10">
+            <div class="bar-graph__bar tooltip-container" data-level="40">
               <p class="bar-graph__bar-title">MongoDB</p>
-              <div class="tooltip">Just starting.</div>
+              <div class="tooltip">Still learning.</div>
             </div>
             <div class="bar-graph__bar tooltip-container" data-level="10">
               <p class="bar-graph__bar-title">NoSQL</p>
               <div class="tooltip">Just starting.</div>
             </div>
-            <div class="bar-graph__bar tooltip-container" data-level="45">
+            <div class="bar-graph__bar tooltip-container" data-level="25">
               <p class="bar-graph__bar-title">Java</p>
               <div class="tooltip">Have some experience.</div>
             </div>
-            <div class="bar-graph__bar tooltip-container" data-level="30">
+            <div class="bar-graph__bar tooltip-container" data-level="20">
               <p class="bar-graph__bar-title">MySQL</p>
               <div class="tooltip">Have some experience.</div>
-            </div>
-          </div>
-        </div>
-        <div class="bar-graph">
-          <h3 class="bar-graph__heading">Other Skills</h3>
-          <div class="bar-graph__legend">
-            <div class="bar-graph__legend-value">Expert</div>
-            <div class="bar-graph__legend-value">Proficient</div>
-            <div class="bar-graph__legend-value">Competent</div>
-            <div class="bar-graph__legend-value">Learning</div>
-          </div>
-          <div class="bar-graph__bars">
-            <div class="bar-graph__bar tooltip-container" data-level="75">
-              <p class="bar-graph__bar-title">Written Communication</p>
-              <div class="tooltip">Expressive.</div>
-            </div>
-            <div class="bar-graph__bar tooltip-container" data-level="70">
-              <p class="bar-graph__bar-title">Problem Solving</p>
-              <div class="tooltip">Love it!</div>
-            </div>
-            <div class="bar-graph__bar tooltip-container" data-level="50">
-              <p class="bar-graph__bar-title">Research</p>
-              <div class="tooltip">Like it.</div>
-            </div>
-            <div class="bar-graph__bar tooltip-container" data-level="25">
-              <p class="bar-graph__bar-title">Project Management</p>
-              <div class="tooltip">Getting there.</div>
             </div>
           </div>
         </div>
@@ -1125,19 +360,6 @@
     </div>
   </div>
 </section>
-<!--<section id="articles" class="eui-grid__container">-->
-  <!--<div class="eui-grid__row">-->
-    <!--<div class="eui-grid__column eui-grid__col-size-12-of-12">-->
-      <!--<h1>Articles</h1>-->
-      <!--<p></p>-->
-    <!--</div>-->
-  <!--</div>-->
-  <!--<div class="eui-grid__row">-->
-    <!--<div class="eui-grid__column eui-grid__col-size-12-of-12">-->
-
-    <!--</div>-->
-  <!--</div>-->
-<!--</section>-->
 <section id="contact" class="eui-grid__container">
   <div class="eui-grid__row">
     <div class="eui-grid__column eui-grid__col-size-12-of-12">
@@ -1153,27 +375,26 @@
         <div class="card">
           <i id="flip-card-icon" class="fa fa-refresh" aria-hidden="true"></i>
           <div class="card-front">
-            <h1 class="name">Aashish Nagpal</h1>
-            <h3 class="title">Aspiring Fullstack JavaScript Developer</h3>
-            <p class="message">Hi! Do you want to build a world-class app? Then let's work together.</p>
+            <h1 class="name">Shashank Kumar</h1>
+            <h3 class="title">Aspiring Fullstack Developer</h3>
+            <p class="message">Hey, Do you want to build a world-class app? Then let's work together.</p>
             <p class="message">You may contact me through any of the following channels.</p>
             <div class="links">
-              <a class="regular-link" href="mailto:aashish.nagpal10@gmail.com">aashish.nagpal10@gmail.com</a>
-              <!--<a class="regular-link" href="https://aashishnagpal.com">aashishnagpal.com</a>-->
+              <a class="regular-link" href="mailto:shashank151090@gmail.com">shashank151090@gmail.com</a>
             </div>
             <div class="social">
               <div class="encyclopedia">
                 <a href="#">
                   <img src="images/enc2.png">
                   <div>
-                    <p>Aashish Nagpal</p>
+                    <p>Shashank Kumar</p>
                     <p>on <span class="encyclopedia-label">Encyclopedia.MD</span></p>
                   </div>
                 </a>
               </div>
               <div class="other-social-media">
-                <a href="http://github.com/aashishnagpal"><img src="images/github2.png"></a>
-                <a href="http://linkedin.com/in/aashishnagpal1"><img src="images/linkedin.png"></a>
+                <a href="https://github.com/Shashank151090"><img src="images/github2.png"></a>
+                <a href="https://www.linkedin.com/in/shashank-kumar-844809a3/"><img src="images/linkedin.png"></a>
               </div>
             </div>
           </div>
@@ -1185,8 +406,217 @@
   </div>
 </section>
 <footer>
-&copy; 2017 &mdash; Aashish Nagpal
+&copy; 2019 &mdash; Shashank Kumar
 </footer>
+
+
+  <!-- Portfolio Modals -->
+
+  <!-- Modal 1 -->
+  <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="close-modal" data-dismiss="modal">
+          <div class="lr">
+            <div class="rl"></div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-8 mx-auto">
+              <div class="modal-body">
+                <!-- Project Details Go Here -->
+                <h2 class="text-uppercase">Project Name</h2>
+                <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
+                <img class="img-fluid d-block mx-auto" src="images/portfolio/01-full.jpg" alt="">
+                <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
+                <ul class="list-inline">
+                  <li>Date: January 2017</li>
+                  <li>Client: Threads</li>
+                  <li>Category: Illustration</li>
+                </ul>
+                <button class="btn btn-primary" data-dismiss="modal" type="button">
+                  <i class="fas fa-times"></i>
+                  Close Project</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 2 -->
+  <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="close-modal" data-dismiss="modal">
+          <div class="lr">
+            <div class="rl"></div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-8 mx-auto">
+              <div class="modal-body">
+                <!-- Project Details Go Here -->
+                <h2 class="text-uppercase">Project Name</h2>
+                <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
+                <img class="img-fluid d-block mx-auto" src="images/portfolio/02-full.jpg" alt="">
+                <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
+                <ul class="list-inline">
+                  <li>Date: January 2017</li>
+                  <li>Client: Explore</li>
+                  <li>Category: Graphic Design</li>
+                </ul>
+                <button class="btn btn-primary" data-dismiss="modal" type="button">
+                  <i class="fas fa-times"></i>
+                  Close Project</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 3 -->
+  <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="close-modal" data-dismiss="modal">
+          <div class="lr">
+            <div class="rl"></div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-8 mx-auto">
+              <div class="modal-body">
+                <!-- Project Details Go Here -->
+                <h2 class="text-uppercase">Project Name</h2>
+                <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
+                <img class="img-fluid d-block mx-auto" src="images/portfolio/03-full.jpg" alt="">
+                <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
+                <ul class="list-inline">
+                  <li>Date: January 2017</li>
+                  <li>Client: Finish</li>
+                  <li>Category: Identity</li>
+                </ul>
+                <button class="btn btn-primary" data-dismiss="modal" type="button">
+                  <i class="fas fa-times"></i>
+                  Close Project</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 4 -->
+  <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="close-modal" data-dismiss="modal">
+          <div class="lr">
+            <div class="rl"></div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-8 mx-auto">
+              <div class="modal-body">
+                <!-- Project Details Go Here -->
+                <h2 class="text-uppercase">Project Name</h2>
+                <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
+                <img class="img-fluid d-block mx-auto" src="images/portfolio/04-full.jpg" alt="">
+                <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
+                <ul class="list-inline">
+                  <li>Date: January 2017</li>
+                  <li>Client: Lines</li>
+                  <li>Category: Branding</li>
+                </ul>
+                <button class="btn btn-primary" data-dismiss="modal" type="button">
+                  <i class="fas fa-times"></i>
+                  Close Project</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 5 -->
+  <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="close-modal" data-dismiss="modal">
+          <div class="lr">
+            <div class="rl"></div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-8 mx-auto">
+              <div class="modal-body">
+                <!-- Project Details Go Here -->
+                <h2 class="text-uppercase">Project Name</h2>
+                <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
+                <img class="img-fluid d-block mx-auto" src="images/portfolio/05-full.jpg" alt="">
+                <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
+                <ul class="list-inline">
+                  <li>Date: January 2017</li>
+                  <li>Client: Southwest</li>
+                  <li>Category: Website Design</li>
+                </ul>
+                <button class="btn btn-primary" data-dismiss="modal" type="button">
+                  <i class="fas fa-times"></i>
+                  Close Project</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 6 -->
+  <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="close-modal" data-dismiss="modal">
+          <div class="lr">
+            <div class="rl"></div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-8 mx-auto">
+              <div class="modal-body">
+                <!-- Project Details Go Here -->
+                <h2 class="text-uppercase">Project Name</h2>
+                <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
+                <img class="img-fluid d-block mx-auto" src="images/portfolio/06-full.jpg" alt="">
+                <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
+                <ul class="list-inline">
+                  <li>Date: January 2017</li>
+                  <li>Client: Window</li>
+                  <li>Category: Photography</li>
+                </ul>
+                <button class="btn btn-primary" data-dismiss="modal" type="button">
+                  <i class="fas fa-times"></i>
+                  Close Project</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
 <div class="c-modal-overlay" style="visibility: hidden;"></div>
 <div id="modal" class="c-modal c-modal--basic">
   <div class="c-modal__content">
@@ -1210,5 +640,16 @@
 <script src="js/tabs.js"></script>
 <script src="js/carousel.js"></script>
 <script src="js/modals.js"></script>
+ <!-- Bootstrap core JavaScript -->
+ <script src="vendor/jquery/jquery.min.js"></script>
+ <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+ <!-- Plugin JavaScript -->
+ <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+ <!-- Contact form JavaScript -->
+ <script src="js/jqBootstrapValidation.js"></script>
+ <script src="js/agency.js"></script>
+
 </body>
 </html>

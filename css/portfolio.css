@@ -507,13 +507,13 @@ html, body {
 
 /* line 1, ../scss/_generic.global.scss */
 body {
-  font-size: 16px;
-  font-family: "Lato", "Helvetica", sans-serif;
-  line-height: 1.2;
-  color: #ebebeb;
-  position: relative;
-  background: #40444f;
-  scroll-behavior: smooth;
+  font-size: 16px !important; 
+  font-family: "Lato", "Helvetica", sans-serif !important;
+  line-height: 1.2 !important;
+  color: #ebebeb !important;
+  position: relative !important;
+  background: #40444f !important;
+  scroll-behavior: smooth !important;
 }
 @media (max-width: 750px) {
   /* line 1, ../scss/_generic.global.scss */
@@ -1994,7 +1994,7 @@ label[for="card-flip"]:hover + .card > #flip-card-icon {
 
 /* line 98, ../scss/_components.business-card.scss */
 .card-back {
-  background: url(../images/card-back.jpg);
+  background: url(../images/back.jpg);
   background-size: 100% 100%;
   -webkit-transform: rotateX(180deg);
           transform: rotateX(180deg);
@@ -2054,6 +2054,11 @@ label[for="card-flip"]:hover + .card > #flip-card-icon {
 /* line 138, ../scss/_components.business-card.scss */
 #card-flip:checked ~ .card .social {
   visibility: hidden;
+}
+.social {
+  display: flex;
+  margin-top: 1.8em !important;
+  align-items: baseline;
 }
 
 /* line 142, ../scss/_components.business-card.scss */
@@ -2474,7 +2479,7 @@ header h1 {
   -webkit-box-flex: 1;
   -webkit-flex: 1;
       -ms-flex: 1;
-          flex: 1;
+          flex: 2;
 }
 @media (max-width: 550px) {
   /* line 159, ../scss/_site-styles.scss */
@@ -2487,8 +2492,8 @@ header h1 {
 .about__img {
   border-radius: 50%;
   border: 0.3em solid #ef4d75;
-  width: 10em;
-  height: auto;
+  width: 20em;
+  height: 25em;
 }
 @media (min-width: 450px) and (max-width: 550px) {
   /* line 169, ../scss/_site-styles.scss */
