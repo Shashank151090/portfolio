@@ -778,6 +778,12 @@ img {vertical-align: middle;}
 .fade:not(.show) {
   opacity: 1 !important;
 }
+.technology{
+  width: 75px;
+  height: 50px;
+  padding: 0px 10px;
+  cursor: help;
+}
 @-webkit-keyframes fade {
   from {opacity: .4} 
   to {opacity: 1}
