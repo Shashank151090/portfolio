@@ -2072,6 +2072,14 @@ label[for="card-flip"]:hover + .card > #flip-card-icon {
       -ms-flex-align: end;
           align-items: flex-end;
 }
+.call-class {
+  width: 50px;
+  background-color: #2879B7;
+  border-radius: 50%;
+  position: relative;
+  bottom: 8px;
+}
+
 
 /* line 148, ../scss/_components.business-card.scss */
 .encyclopedia a:hover::after {
